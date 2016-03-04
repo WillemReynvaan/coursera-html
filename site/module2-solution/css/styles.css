@@ -1,0 +1,101 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", "Sans serif";
+
+
+}
+
+h1 {
+	text-align: center;
+	font-size:3.5em;
+}
+
+h2 {
+	margin:0px;
+	text-align:center;
+	font-size:1.25em;
+}
+
+.item_name {
+	position:absolute;
+	top:0px;
+	right:0px;
+	width: 90px;
+
+	border-style:solid;
+	border-width: 1px;
+	border-color:blue;
+	border-bottom-left-radius: 15px;
+}
+
+.menu_item {
+	position:relative;
+	border-style: solid;
+	border-width: 1px;
+	border-color: black;
+	padding: 30px;
+	padding-top:40px;
+	margin:15px;
+	box-shadow: 5px 5px 10px black;
+}
+
+#chicken {
+	background-color:BurlyWood;
+	color:Brown;
+	border-color:Brown;
+}
+
+#fish {
+	background-color:#00ffff;
+	color:DarkCyan;
+	border-color:DarkCyan;
+}
+
+#vegetarian {
+	background-color:GreenYellow;
+	color:ForestGreen;
+	border-color:ForestGreen;
+}
+
+
+
+/* Media queries:
+Break points: desktop view: width >= 992px +
+				tablet view: 768 >= width <= 991 px
+				phone view: width <= 767
+notation:;
+x_n where x is the view identifier: dv, tv or pv 
+		and n is the number of columns */
+
+
+/*phone view*/
+@media (max-width: 767px) {
+	.pv_1 {
+		float:left;
+		width:100%;
+	}
+}
+
+/*tablet view*/
+@media (min-width:768px) and (max-width:991px) {
+	.tv_2 {
+		float:left;
+		width:50%;
+	}
+
+	.tv_1 {
+		float:left;
+		width:100%;
+	}
+}
+
+/*desktop view*/
+@media (min-width:992px) {
+	.dv_3 {
+		float:left;
+		width:33%;
+	}
+}
