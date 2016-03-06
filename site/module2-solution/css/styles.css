@@ -4,48 +4,47 @@
 
 body {
 	font-family: "Lucida Sans Unicode", "Lucida Grande", "Sans serif";
-
-
+	margin:15px;
+	padding:0px;
 }
 
 h1 {
 	text-align: center;
-	font-size:3.5em;
-}
-
-h2 {
-	margin:0px;
-	text-align:center;
-	font-size:1.25em;
-}
-
-.item_name {
-	position:absolute;
-	top:0px;
-	right:0px;
-	width: 90px;
-
-	border-style:solid;
-	border-width: 1px;
-	border-color:blue;
-	border-bottom-left-radius: 15px;
+	font-size:1.75em;
 }
 
 .menu_item {
 	position:relative;
 	border-style: solid;
-	border-width: 1px;
+	border-width: 2px;
 	border-color: black;
-	padding: 30px;
+
+	background-color:PapayaWhip;
+	padding: 15px;
 	padding-top:40px;
-	margin:15px;
-	box-shadow: 5px 5px 10px black;
+	margin:10px;
+	min-height:250px;
+}
+
+.item_name {
+	position:absolute;
+	top:-1px;
+	right:-1px;
+	width: 90px;
+	margin:0px;
+
+	text-align:center;
+	font-size:1.25em;
+
+	border-style:solid;
+	border-width: 2px;
+	border-bottom-left-radius: 15px;
 }
 
 #chicken {
 	background-color:BurlyWood;
-	color:Brown;
-	border-color:Brown;
+	color:Sienna;
+	border-color:Sienna;
 }
 
 #fish {
@@ -54,19 +53,26 @@ h2 {
 	border-color:DarkCyan;
 }
 
-#vegetarian {
+#dessert {
 	background-color:GreenYellow;
 	color:ForestGreen;
 	border-color:ForestGreen;
 }
 
+.row {
+	margin-left:-15px;
+	margin-right:-15px;
+}
 
+.pv_1, .tv_2, .tv_1, .dv_3 {
+	float:left;
+}
 
 /* Media queries:
 Break points: desktop view: width >= 992px +
 				tablet view: 768 >= width <= 991 px
 				phone view: width <= 767
-notation:;
+notation:
 x_n where x is the view identifier: dv, tv or pv 
 		and n is the number of columns */
 
@@ -74,7 +80,6 @@ x_n where x is the view identifier: dv, tv or pv
 /*phone view*/
 @media (max-width: 767px) {
 	.pv_1 {
-		float:left;
 		width:100%;
 	}
 }
@@ -82,12 +87,10 @@ x_n where x is the view identifier: dv, tv or pv
 /*tablet view*/
 @media (min-width:768px) and (max-width:991px) {
 	.tv_2 {
-		float:left;
 		width:50%;
 	}
 
 	.tv_1 {
-		float:left;
 		width:100%;
 	}
 }
@@ -95,7 +98,6 @@ x_n where x is the view identifier: dv, tv or pv
 /*desktop view*/
 @media (min-width:992px) {
 	.dv_3 {
-		float:left;
 		width:33%;
 	}
 }
